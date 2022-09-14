@@ -1,8 +1,13 @@
-#include <unistd.h>
 /**
-*_putchar : writes character c to stdout
+*main- prints _putchar
+*return - 0 (success)
 */
-int _putchar(char c)
+int main(void)
 {
-return (write(1, &c, 1));
+char word[8]="_putchar";
+int i;
+for (i=0;i<8;i++)
+_putchar(word[i]);
+_putchar('\n');
+return (0);
 }
